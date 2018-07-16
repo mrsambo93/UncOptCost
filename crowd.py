@@ -94,6 +94,7 @@ class Crowd:
         for user in errors_dict:
             total_er_yes += errors_dict[user]["er_yes"]
             total_er_no += errors_dict[user]["er_no"]
+        print("Errors dict: %s" % errors_dict)
         self.avg_er_yes = total_er_yes/self.num_users
         self.avg_er_no = total_er_no/self.num_users
         print("avg_yes: %s" % self.avg_er_yes)

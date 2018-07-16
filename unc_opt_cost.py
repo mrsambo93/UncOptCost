@@ -47,12 +47,6 @@ class UncOptCost:
         precision = self.eval_precision(l)
         print("precision: %f" % precision)
 
-    def identify_items(self, items):
-        item_dict = {}
-        for (index, elem) in enumerate(items):
-            item_dict[index] = elem
-        return item_dict
-
     def compute_y(self, selectivity, error_rate, strategy):
         y = {}
         found = False
